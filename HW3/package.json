@@ -1,0 +1,23 @@
+{
+  "name": "hw3express",
+  "version": "1.0.0",
+  "description": "homework node js",
+  "main": "server.js",
+  "scripts": {
+    "test": "lol",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stskdrv/NodeJSLaBCourse.git"
+  },
+  "author": "Stanislav Kadyrov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Stskdrv/NodeJSLaBCourse/issues"
+  },
+  "homepage": "https://github.com/Stskdrv/NodeJSLaBCourse#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
