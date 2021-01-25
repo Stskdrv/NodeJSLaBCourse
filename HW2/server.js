@@ -37,7 +37,7 @@ const requestHandler = (request, response) => {
     response.writeHead(200, {'Content-Type': 'text/plain'});
 
     if (request.method === 'POST') {
-        if (request.headers.iknowyoursecret === 'TheOwlAreNotWhatTheySeem') {
+        if (request.headers.iknowyoursecret === 'TheOwlAreNotWhatTheySeem') {// мы тут делаем проверку на соответствие нашего заголовка требуемому и если все ок то пушим юзера в базу а если нет то просим его сообщить нам секрет, для доступа
             if (request.headers.name) {
                 users.push({name: request.headers.name, ip: request.connection.remoteAddress})
                 fs.writeFile(db, JSON.stringify(users, null, ' '), err => {
